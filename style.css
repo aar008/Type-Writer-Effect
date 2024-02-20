@@ -1,0 +1,29 @@
+.wrapper {
+  height: 100vh;
+  /*For centering the text*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-effect {
+  width: 22ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  whitespace: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 24pt;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
